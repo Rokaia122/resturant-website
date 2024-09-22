@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+    width:100% ;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b161a;
+    padding: 15px 30px;
+}
+
+.brand-name a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.brand-name h5{
+    color: white;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #d58443;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.enquiry-btn {
+    background-color: #d58443;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.enquiry-btn:hover {
+    background-color: #b56434;
+}
+.part-one{
+    width: 100%;
+    height: 60vh;
+    background-image:url(imgs/steak.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.part-one p{
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    text-align: center;
+    font-size: large;
+    padding-top: 100px;
+}
+.part-one h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.learn-btn{
+    background-color: #d58443;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 150px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.learn-btn:hover {
+    background-color: #b56434;
+}
+.part-two{
+    height: 70vh;
+    background-color: #0b161a;
+}
+.part-two p{
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    text-align: center;
+    font-size: large;
+    padding-top: 10px;
+    color: white;
+}
+.part-two h1{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+.card-container {
+    text-align: center;
+    padding-left: 250px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    gap: 30px;  
+}
+
+/* General card styles */
+.card {
+    width: 20%;
+    height: 55vh;
+    gap: 10px;
+}
+
+/* Card 1 specific styling */
+.card1 {
+    background: url('imgs/1462828.jpg') no-repeat center center/cover;
+}
+
+/* Card 2 specific styling */
+.card2 {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141e20;
+    padding: 20px;
+}
+
+.card2 h1 {
+    margin-bottom: 10px;
+}
+
+.card2 p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.card2 button {
+    padding: 10px 20px;
+    background-color: #b56434;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card2 button:hover {
+    background-color: #141e20;
+}
+
+/* Card 3 specific styling */
+.card3 {
+    background: url('imgs/loaded-fries-0.jpg') no-repeat center center/cover;
+}
+.container {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+}
+
+/* Left side (image) */
+.left {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+/* Right side (menu and button) */
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.right h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-about, .footer-links, .footer-contact, .footer-social {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-about h3, .footer-links h3, .footer-contact h3, .footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #d58443;
+}
+
+.footer-about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #d58443;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-social a {
+    color: #f4f4f4;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #d58443;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about, .footer-links, .footer-contact, .footer-social {
+        margin: 20px 0;
+    }
+}
